@@ -1,0 +1,18 @@
+#root {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+    /* Estilos para pantalla Mobile */
+@media only screen and (max-width: 600px) {
+
+
+}
+
+    /* Estilos para Pantalla Mediana o Grande */
+@media only screen and (min-width: 601px) {
+
+
+}
