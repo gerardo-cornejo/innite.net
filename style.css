@@ -5,6 +5,55 @@
     padding: 0;
 }
 
+.img-banner-principal{
+    width: 100%;
+    height: auto;
+    max-height: 150%;
+    max-width: 100%;
+}
+
+.seccion-banner-principal{
+    position: relative;
+    font-size: 25px;
+
+}
+
+.content-banner{
+    position: absolute;
+    top: 50%;
+    left: 20px; /* Ajusta la distancia izquierda según sea necesario */
+    transform: translateY(-50%);
+    margin-left: 55.5px;
+    margin-right: 55.5px;
+    padding: 48px 22px;
+}
+
+.seccion-quienes-somos{
+    margin-left: 55.5px;
+    margin-right: 55.5px;
+    padding: 48px 22px;
+}
+
+.titulo-centrado{
+    text-align: center;
+    padding-bottom: 22px;
+}
+
+.seccion-proyectos{
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 48px 22px;
+}
+
+.card-blog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.tamanio-icono{
+    width: 22px;
+    height: 22px;
+}
     /* Estilos para pantalla Mobile */
 @media only screen and (max-width: 600px) {
 

@@ -11,11 +11,12 @@
         <title>Innite</title>
     </head>
     <body>
+<!-- SECCION NAVBAR -->
         <header>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">LOGO INNITE</a>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Quienes Somos</a>
                         </li>
@@ -40,6 +41,10 @@
                                 aria-expanded="false">
                                     Idioma
                             </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Español</a></li>
+                                <li><a class="dropdown-item" href="#">Ingles</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Dark/Light</a>
@@ -49,19 +54,26 @@
             </nav>
         </header>
             <main>
-                <section>
-                    <img src="img/Fondo_Blanco.png" alt="Fondo Blanco Presentación">
-                    <p>Texto inspirador que ayudara a vender los servicios de la empresa Loren impsos Loren impsosLoren</p>
-                    <button button type="button" class="btn btn-dark">Consultar Servicio</button>
+<!-- SECCION BANNER PRINCINAL -->
+                <section class="seccion-banner-principal">
+                    <img class="img-banner-principal" src="img/Fondo_Blanco.png" alt="Fondo Blanco Presentación">
+                    <div class="content-banner">
+                        <p>Texto inspirador que ayudara a vender los servicios de la empresa Loren impsos Loren impsosLoren</p>
+                        <button button type="button" class="btn-banner btn btn-dark">Consultar Servicio</button>
+                    </div>
                 </section>
-                <section>
-                    <h2>Quienes Somos</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate eligendi deleniti officiis atque ea mollitia quas voluptate, ipsa accusantium nesciunt molestiae consequatur maiores delectus facilis enim consectetur? Optio, doloremque quas?
-                    Harum, asperiores explicabo nobis vitae quasi, dolores ex ullam odit reiciendis aliquam accusamus doloremque, fugit omnis nihil voluptatum voluptatem. Maiores omnis excepturi dolores possimus porro sapiente ducimus aut aliquid quisquam.</p>
-                    <img src="img/Seccion2_Tecnologia.png" alt="Imagen Tecnologia">
+<!-- SECCION QUIENES SOMOS -->
+                <section class="seccion-quienes-somos">
+                    <h2 class="titulo-centrado">Quienes Somos</h2>
+                    <div class="row g-3">
+                        <p class="col">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate eligendi deleniti officiis atque ea mollitia quas voluptate, ipsa accusantium nesciunt molestiae consequatur maiores delectus facilis enim consectetur? Optio, doloremque quas?
+                        Harum, asperiores explicabo nobis vitae quasi, dolores ex ullam odit reiciendis aliquam accusamus doloremque, fugit omnis nihil voluptatum voluptatem. Maiores omnis excepturi dolores possimus porro sapiente ducimus aut aliquid quisquam.</p>
+                        <img class="col" src="img/Seccion2_Tecnologia.png" alt="Imagen Tecnologia">
+                    </div>
                 </section>
-                <section>
-                    <h2>Servicios</h2>
+<!-- SECCION SERVICIOS -->
+                <section class="seccion-quienes-somos">
+                    <h2 class="titulo-centrado">Servicios</h2>
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="parrafo1-tab" data-bs-toggle="tab" data-bs-target="#parrafo1-tab-pane" type="button" role="tab" aria-controls="parrafo1-tab-pane" aria-selected="true">Analisis de Datos</button>
@@ -79,8 +91,9 @@
                         <div class="tab-pane fade" id="parrafo3-tab-pane" role="tabpanel" aria-labelledby="parrafo3-tab" tabindex="0">Texto3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni omnis nulla, veritatis molestiae eaque minus consequuntur ab repellat! Delectus repellendus aut omnis doloribus. Sapiente voluptatem nostrum optio. Voluptates, BBBBB BBBBB BBBB</div>
                     </div>
                 </section>
-                <section>
-                    <h2>Proyectos</h2>
+<!-- SECCION PROYECTOS -->
+                <section class="seccion-proyectos">
+                    <h2 class="titulo-centrado">Proyectos</h2>
                     <div id="carouselExampleCaptions" class="carousel slide">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -120,19 +133,39 @@
                         </button>
                     </div>
                 </section>
+<!-- SECCION BLOG -->
                 <section>
-                    <h2>Blog</h2>
-                    <div class="card" style="width: 18rem;">
-                        <img src="img/blog1.png" class="card-img-top" alt="Data Analitics">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h2 class="titulo-centrado" >Blog</h2>
+                    <div class="card-blog">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/blog1.png" class="card-img-top" alt="Data Analitics">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/blog1.png" class="card-img-top" alt="Data Analitics">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/blog1.png" class="card-img-top" alt="Data Analitics">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
                         </div>
                     </div>
                 </section>
+<!-- SECCION CONTACTO -->
                 <section>
-                    <h2>Contacto</h2>
+                    <h2 class="titulo-centrado" >Contacto</h2>
                     <form class="row g-3">
                         <div class="col">
                             <label for="exampleFormControlInput1" class="form-label">Nombre Completo</label>
@@ -150,25 +183,27 @@
                     </form>
                 </section>
             </main>
+<!-- SECCION FOOTER -->
         <footer>
             <div class="row g-3">
-                <div class="col">
+                <div class="titulo-centrado col">
                     <strong>LOGO INNITE</strong>
                     <h4>Redes Sociales</h4>
                     <div>
-                        <a href=""><img src="" alt="Instagram"></a>
-                        <a href=""><img src="" alt="Linkedin"></a>
-                        <a href=""><img src="" alt="Youtube"></a>
-                        <a href=""><img src="" alt="Twitter"></a>
+                        <a href=""><img class="tamanio-icono" src="img/instagram.png" alt="Instagram"></a>
+                        <a href=""><img class="tamanio-icono" src="img/linkedin.png" alt="Linkedin"></a>
+                        <a href=""><img class="tamanio-icono" src="img/youtube.png" alt="Youtube"></a>
+                        <a href=""><img class="tamanio-icono" src="img/twitter.png" alt="Twitter"></a>
                     </div>
                 </div>
-                <div class="col">
+                <div class="titulo-centrado col">
                     <h4>Datos de Contacto:</h4>
-                    <p><img src="" alt="Correo">Info@empresa.com</p>
-                    <p><img src="" alt="Teléfono">+051 948265333</p>
-                    <p><img src="" alt="Dirección">Jr. Ayacucho, N° 235</p>
+                    <p><img class="tamanio-icono" src="img/correo.png" alt="Correo">Info@empresa.com</p>
+                    <p><img class="tamanio-icono" src="img/telefono.png" alt="Teléfono">+051 948265333</p>
+                    <p><img class="tamanio-icono" src="img/lugar.png" alt="Dirección">Jr. Ayacucho, N° 235</p>
                 </div>
             </div>
+<!-- SECCION PIE DE PAGINA -->
             <div>
                 Hecho por Innite, 2024.
             </div>
