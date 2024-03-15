@@ -13,7 +13,7 @@
     <body>
 <!-- SECCION NAVBAR -->
         <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar sticky-top navbar-expand-md bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">LOGO INNITE</a>
                     <ul class="navbar-nav mb-2 mb-lg-0">
@@ -142,7 +142,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn btn-primary">Ver más</a>
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
@@ -150,7 +150,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn btn-primary">Ver más</a>
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
@@ -158,13 +158,13 @@
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn btn-primary">Ver más</a>
                             </div>
                         </div>
                     </div>
                 </section>
 <!-- SECCION CONTACTO -->
-                <section>
+                <section class="seccion-contacto">
                     <h2 class="titulo-centrado" >Contacto</h2>
                     <form class="row g-3">
                         <div class="col">
@@ -173,13 +173,15 @@
                         </div>
                         <div class="col">
                             <label for="exampleFormControlInput1" class="form-label">Correo</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre123@gmail.com">
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe aqui el mensaje..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <div class="btn-contacto">
+                            <button type="submit" class="btn btn-dark">Enviar</button>
+                        </div>    
                     </form>
                 </section>
             </main>

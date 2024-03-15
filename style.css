@@ -15,7 +15,6 @@
 .seccion-banner-principal{
     position: relative;
     font-size: 25px;
-
 }
 
 .content-banner{
@@ -49,15 +48,33 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-left: 55.5px;
+    margin-right: 55.5px;
+    padding: 48px 22px;
 }
 .tamanio-icono{
     width: 22px;
     height: 22px;
 }
+
+.seccion-contacto{
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 48px 150px;
+}
+
+.btn-contacto{
+    display: flex;
+    justify-content: center;
+}
+
     /* Estilos para pantalla Mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
+    header .navbar-nav {
+        display: none;
 
+    }
 }
 
     /* Estilos para Pantalla Mediana o Grande */
