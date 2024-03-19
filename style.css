@@ -7,14 +7,16 @@
 
 .img-banner-principal{
     width: 100%;
-    height: auto;
-    max-height: 150%;
-    max-width: 100%;
+    height: 100%;
 }
 
 .seccion-banner-principal{
     position: relative;
     font-size: 25px;
+}
+.nav-item{
+    display: flex;
+    justify-content: center;
 }
 
 .content-banner{
@@ -69,12 +71,22 @@
 }
 
     /* Estilos para pantalla Mobile */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 969px) {
 
-    header .navbar-nav {
-        display: none;
-
+    .seccion-quienes-somos div{
+        display: grid;
     }
+
+    .seccion-quienes-somos div .col-7{
+        width: 100%;
+        text-align: center;
+    }
+
+    .seccion-quienes-somos div .col-5{
+        width: 100%;
+        justify-content: center;
+    }
+
 }
 
     /* Estilos para Pantalla Mediana o Grande */
