@@ -35,6 +35,16 @@
     padding: 48px 22px;
 }
 
+.seccion-servicios{
+    margin-left: 55.5px;
+    margin-right: 55.5px;
+    padding: 48px 22px;
+}
+
+.seccion-servicios-mobile{
+    display: none;
+}
+
 .titulo-centrado{
     text-align: center;
     padding-bottom: 22px;
@@ -54,10 +64,6 @@
     margin-right: 55.5px;
     padding: 48px 22px;
 }
-.tamanio-icono{
-    width: 22px;
-    height: 22px;
-}
 
 .seccion-contacto{
     margin-left: 150px;
@@ -70,27 +76,77 @@
     justify-content: center;
 }
 
-    /* Estilos para pantalla Mobile */
-@media only screen and (max-width: 969px) {
-
-    .seccion-quienes-somos div{
-        display: grid;
-    }
-
-    .seccion-quienes-somos div .col-7{
-        width: 100%;
-        text-align: center;
-    }
-
-    .seccion-quienes-somos div .col-5{
-        width: 100%;
-        justify-content: center;
-    }
-
+footer{
+    background-color: rgb(87, 87, 87);
+    color: white;
 }
 
-    /* Estilos para Pantalla Mediana o Grande */
-@media only screen and (min-width: 601px) {
+footer .row{
+    padding-top: 30px;
+}
+
+footer .row .col div{
+    margin: 20px 0px;
+}
+
+footer div div p{
+    margin-bottom: 10px;
+}
+
+.tamanio-icono{
+    width: 22px;
+    height: 22px;
+}
+
+.text-white{
+    color: white;
+    text-decoration: none;
+}
+
+.pie-de-pagina{
+    background-color: rgb(36, 36, 36);
+    color: white;
+    text-align: center;
+}
+
+    /* Estilos para Pantalla Pequeña */
+    @media only screen and (max-width: 650px) {
+        footer .row{
+            display: flex;
+            flex-direction: column-reverse;
+            
+        }
+        footer .row div{
+            margin-top: 30px;
+        }
+}
+    
+    /* Estilos para pantalla Mediano */
+    @media only screen and (max-width: 969px) {
+
+        .seccion-quienes-somos div{
+            display: grid;
+        }
+    
+        .seccion-quienes-somos div .col-7{
+            width: 100%;
+            text-align: center;
+        }
+    
+        .seccion-quienes-somos div .col-5{
+            width: 100%;
+            justify-content: center;
+        }
+        .seccion-servicios-web{
+            display: none;
+        }
+        .seccion-servicios-mobile{
+            display: block;
+        }
+    }
+
+    /* Estilos para Pantalla Grande */
+@media only screen and (max-width: 1200px) {
 
 
 }
