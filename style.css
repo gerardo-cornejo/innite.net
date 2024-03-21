@@ -36,9 +36,8 @@
 }
 
 .seccion-servicios{
-    margin-left: 55.5px;
-    margin-right: 55.5px;
-    padding: 48px 22px;
+    padding: 48px 77.5px;
+    background-color: rgb(190, 190, 190);
 }
 
 .seccion-servicios-mobile{
@@ -56,6 +55,11 @@
     padding: 48px 22px;
 }
 
+.seccion-blog{
+    padding: 48px 0px;
+    background-color: rgb(190, 190, 190);;
+}
+
 .card-blog{
     display: flex;
     flex-wrap: wrap;
@@ -66,9 +70,9 @@
 }
 
 .seccion-contacto{
-    margin-left: 150px;
-    margin-right: 150px;
-    padding: 48px 150px;
+    padding: 48px 50px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .btn-contacto{
@@ -109,20 +113,38 @@ footer div div p{
     text-align: center;
 }
 
+/* Estilo opcional para ajustar el tamaño de las imágenes */
+.carousel-item img {
+    max-height: 300px;
+    width: auto;
+}
+
+  /* Estilo opcional para personalizar la apariencia de la caption */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+}
+
+#blogCarousel{
+    background-color: #adadad;
+}
     /* Estilos para Pantalla Pequeña */
     @media only screen and (max-width: 650px) {
         footer .row{
             display: flex;
             flex-direction: column-reverse;
-            
         }
         footer .row div{
             margin-top: 30px;
         }
+        .seccion-contacto form .col{
+            flex: none;
+        }
 }
     
     /* Estilos para pantalla Mediano */
-    @media only screen and (max-width: 969px) {
+    @media only screen and (max-width: 900px) {
 
         .seccion-quienes-somos div{
             display: grid;
@@ -146,7 +168,10 @@ footer div div p{
     }
 
     /* Estilos para Pantalla Grande */
-@media only screen and (max-width: 1200px) {
-
-
+@media only screen and (min-width: 1200px) {
+    .seccion-contacto{
+        margin-left: 150px;
+        margin-right: 150px;
+        padding: 48px 150px;
+    }
 }
