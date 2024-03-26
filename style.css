@@ -55,9 +55,26 @@
     padding: 48px 22px;
 }
 
-.seccion-blog{
+.seccion-proyectos .carousel-item img {
+    filter: brightness(50%);
+}
+
+.seccion-blog-web{
     padding: 48px 0px;
-    background-color: rgb(190, 190, 190);;
+    background-color: rgb(190, 190, 190);
+}
+.seccion-blog-mobile{
+    display: none;
+}
+
+.seccion-blog-mobile .card{
+    background-color: #adadad;
+}
+
+.seccion-blog-mobile .card-body{
+    background-color: white;
+    margin-bottom: 70px;
+
 }
 
 .card-blog{
@@ -113,17 +130,21 @@ footer div div p{
     text-align: center;
 }
 
-/* Estilo opcional para ajustar el tamaño de las imágenes */
+.carousel-item{
+
+}
+
 .carousel-item img {
-    max-height: 300px;
     width: auto;
 }
 
-  /* Estilo opcional para personalizar la apariencia de la caption */
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.00);
+    text-align: start;
+    right: 60%;
+    top: 1%;
+    left: 10%;
+
 }
 
 #blogCarousel{
@@ -163,6 +184,12 @@ footer div div p{
             display: none;
         }
         .seccion-servicios-mobile{
+            display: block;
+        }
+        .seccion-blog-web{
+            display: none;
+        }
+        .seccion-blog-mobile{
             display: block;
         }
     }

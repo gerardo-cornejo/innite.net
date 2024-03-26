@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -17,7 +16,7 @@
     </head>
     <body>
 <!-- SECCION NAVBAR -->
-        <header>
+        <header class="container-fluid">
             <nav class="navbar navbar-expand-md bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">LOGO INNITE</a>
@@ -27,19 +26,19 @@
                     <div class="navbar-collapse w-100 order-3 dual-collapse2 collapse" id="navbar-toggler">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Quienes Somos</a>
+                                <a class="nav-link" href="#seccion-quienes-somos">Quienes Somos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Servicios</a>
+                                <a class="nav-link" href="#seccion-servicios">Servicios</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Proyectos</a>
+                                <a class="nav-link" href="#seccion-proyectos">Proyectos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link" href="#seccion-blog">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
+                                <a class="nav-link" href="#seccion-contacto">Contacto</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a 
@@ -62,7 +61,6 @@
                     </div>
                 </div>
             </nav>
-
         </header>
             <main>
 <!-- SECCION BANNER PRINCINAL -->
@@ -74,7 +72,7 @@
                     </div>
                 </section>
 <!-- SECCION QUIENES SOMOS -->
-                <section class="seccion-quienes-somos">
+                <section id="seccion-quienes-somos" class="seccion-quienes-somos">
                     <h2 class="titulo-centrado">Quienes Somos</h2>
                     <div class="row g-3">
                         <p class="col-7">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate eligendi deleniti officiis atque ea mollitia quas voluptate, ipsa accusantium nesciunt molestiae consequatur maiores delectus facilis enim consectetur? Optio, doloremque quas?
@@ -85,7 +83,7 @@
                     </div>
                 </section>
 <!-- SECCION SERVICIOS -->
-                <section class="seccion-servicios">
+                <section id="seccion-servicios" class="seccion-servicios">
                     <h2 class="titulo-centrado">Servicios</h2>
                     <div class="seccion-servicios-mobile">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -121,7 +119,7 @@
                     </div>
                 </section>
 <!-- SECCION PROYECTOS -->
-                <section class="seccion-proyectos">
+                <section id="seccion-proyectos" class="seccion-proyectos">
                     <h2 class="titulo-centrado">Proyectos</h2>
                     <div id="carouselExampleCaptions" class="carousel slide">
                         <div class="carousel-indicators">
@@ -130,28 +128,44 @@
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/Proyecto1_Toyoya.png" class="d-block w-100" alt="Proyecto-Toyota">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Single Page Toyota</h5>
+                            <div class="carousel-item active ">
+                                <img src="img/Proyecto_1.png" class="d-block w-100" alt="Proyecto-1">
+                                <div class="carousel-caption px-4 my-5">
+                                    <h3>Proyecto - N°1</h3>
+                                    <br>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatum autem praesentium quibusdam veniam in magnam enim, sequi fugit quae quas</p>
+                                    <br>
+                                    <div class="d-flex justify-content-around">    
+                                        <button button type="button" class="btn btn-light">Ver Proyecto</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Proyecto2_Caterpillar.png" class="d-block w-100" alt="Proyecto-Caterpillar">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Second slide label</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatum autem praesentium quibusdam veniam in magnam enim, sequi fugit quae quas.</p>
+                                <img src="img/Proyecto_2.png" class="d-block w-100" alt="Proyecto-2">
+                                <div class="carousel-caption px-4 my-5">
+                                    <h3>Proyecto - N°2</h3>
+                                    <br>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatum autem praesentium quibusdam veniam in magnam enim, sequi fugit quae quas</p>
+                                    <br>
+                                    <div class="d-flex justify-content-around">    
+                                        <button button type="button" class="btn btn-light">Ver Proyecto</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Proyecto3_Netflix.png" class="d-block w-100" alt="Proyecto-Netflix">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatum autem praesentium quibusdam veniam in magnam enim, sequi fugit quae quas.</p>
+                                <img src="img/Proyecto_3.png" class="d-block w-100" alt="Proyecto-3">
+                                <div class="carousel-caption px-4 my-5">
+                                    <h3>Proyecto - N°3</h3>
+                                    <br>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatum autem praesentium quibusdam veniam in magnam enim, sequi fugit quae quas</p>
+                                    <br>
+                                    <div class="d-flex justify-content-around">    
+                                        <button button type="button" class="btn btn-light">Ver Proyecto</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
@@ -161,97 +175,88 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
+                    <!-- PARA PONERLE SUBTITULOS Y TITULO ABAJO - FORMATO PREDETERMINADO
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Single Page Toyota</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatum autem praesentium quibusdam veniam in magnam enim, sequi fugit quae quas</p>
+                                </div>
+                                -->
                 </section>
 <!-- SECCION BLOG -->
-                <section class="seccion-blog">
+<!-- WEB BLOG -->
+                <section id="seccion-blog" class="seccion-blog-web">
                     <h2 class="titulo-centrado" >Blog</h2>
                     <div class="card-blog">
                         <div class="card" style="width: 18rem;">
                             <img src="img/blog1.png" class="card-img-top" alt="Data Analitics">
                             <div class="card-body">
-                                <h5 class="card-title">La AI revolucionará 
-                                    el mundo</h5>
+                                <h5 class="card-title">La AI revolucionará el mundo</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Ver más</a>
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
-                            <img src="img/blog1.png" class="card-img-top" alt="Data Analitics">
+                            <img src="img/blog2.png" class="card-img-top" alt="Data Analitics">
                             <div class="card-body">
-                                <h5 class="card-title">El poder del análisis 
-                                    de datos</h5>
+                                <h5 class="card-title">El poder del análisis de datos</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Ver más</a>
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
-                            <img src="img/blog1.png" class="card-img-top" alt="Data Analitics">
+                            <img src="img/blog3.png" class="card-img-top" alt="Data Analitics">
                             <div class="card-body">
-                                <h5 class="card-title">Ultimos avances 
-                                    de la robotica</h5>
+                                <h5 class="card-title">Ultimos avances de la robotica</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Ver más</a>
                             </div>
                         </div>
                     </div>
                 </section>
-
-                <div id="blogCarousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="d-block w-100" src="img/blog1.png" alt="First slide">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Título del artículo 1</h5>
-                          <p>Contenido del artículo 1</p>
+<!-- MOBILE BLOG -->
+                    <div id="blogCarousel" id="seccion-blog" class="carousel slide seccion-blog-mobile" data-ride="carousel">
+                        <h2 class="titulo-centrado py-5" >Blog</h2>
+                        <div class="carousel-inner">
+                            <div class="card carousel-item active">
+                                <div class="d-block mx-auto" style="width: 18rem;">
+                                    <img src="img/blog1.png" class="card-img-top d-block w-100" alt="Data Analitics First slide">
+                                    <div class="card-body">
+                                        <h5 class="card-title">La AI revolucionará el mundo</h5>
+                                        <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card carousel-item" >
+                                <div class="d-block mx-auto" style="width: 18rem;">
+                                    <img src="img/blog2.png" class="card-img-top d-block w-100" alt="Data Analitics">
+                                    <div class="card-body">
+                                        <h5 class="card-title">El poder del análisis de datos</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card carousel-item" >
+                                <div class="d-block mx-auto" style="width: 18rem;">
+                                    <img src="img/blog3.png" class="card-img-top d-block w-100" alt="Data Analitics">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ultimos avances de la robotica</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="img/Proyecto2_Caterpillar.png" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Título del artículo 2</h5>
-                          <p>Contenido del artículo 2</p>
-                        </div>
-                      </div>
-                      <!-- Agrega más divs de carousel-item según sea necesario para más artículos -->
+                        <a class="carousel-control-prev" data-bs-target="#blogCarousel" role="button" data-bs-slide="prev">
+                            <img src="img/icono_fecha_izquierda.png" class="carousel-control-prev-icon" aria-hidden="true">
+                        </a>
+                        <a class="carousel-control-next" data-bs-target="#blogCarousel" role="button" data-bs-slide="next">
+                            <img src="img/icono_fecha_derecha.png" class="carousel-control-next-icon" aria-hidden="true">
+                        </a>  
                     </div>
-                    <a class="carousel-control-prev" href="#blogCarousel" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#blogCarousel" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-                  
-                <!--
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-50" src="img/Seccion2_Tecnologia.png" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-50" src="img/blog1.png" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-50" src="img/Proyecto2_Caterpillar.png" alt="Third slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a>
-                </div>
--->
 <!-- SECCION CONTACTO -->
-                <section class="seccion-contacto">
+                <section id="seccion-contacto" class="seccion-contacto">
                     <h2 class="titulo-centrado" >Contacto</h2>
                     <form class="row g-3">
                         <div class="col">
@@ -301,5 +306,7 @@
                 Hecho por Innite, 2024.
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     </body>
 </html>
